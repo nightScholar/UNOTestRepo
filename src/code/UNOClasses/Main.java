@@ -5,6 +5,10 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import java.util.Stack;
+import code.UNOClasses.Card.CardType;
+import code.UNOClasses.Card.UNOCard;
+import code.UNOClasses.Card.UNOColor;
 
 public class Main extends Application {
 
@@ -19,7 +23,7 @@ public class Main extends Application {
 
     public static void main(String[] args) {
         launch(args);
-        /*UNOCard c = new UNOCard(CardType.DRAWTWO, UNOColor.BLUE);
+        UNOCard c = new UNOCard(CardType.DRAWTWO, UNOColor.BLUE);
         System.out.println(c);
 
         System.out.println("Draw 2: " + c.isDraw2());
@@ -55,6 +59,6 @@ public class Main extends Application {
 
         // entry for the project, which will launch a single instance of the game
         Game gameObj= new Game();
-        gameObj.play();*/
+        gameObj.play();
     }
 }
